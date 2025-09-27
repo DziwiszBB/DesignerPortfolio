@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f1e73a2d7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+   <div id="header">
+      <div class="container">
+        <nav>
+      <!---->    <img src="logo.png" class="logo"> 
+          <ul id="sidemenu">
+            <li><a href="#header">Strona Główna</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#servieces">Usługi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontkat</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI Designer</p>
+          <h1>Witam,<br> <span>Piotr Dziwisz</span> </br> </h1>
+        </div>
+      </div>
+    </div>
+<!----about-----------DODAC ZDJECIE--> 
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="8.jpg">
+          </div>
+          <div class="about-col-2">
+            <img src="3.jpg">
+          </div>
+            <h1 class="sub-title">O mnie</h1>
+            <p>Jestem kreatywnym i zaangażowanym projektantem front-endu z pasją do tworzenia nowoczesnych i funkcjonalnych rozwiązań cyfrowych. Specjalizuję się w UX/UI designie, web designie oraz app designie, łącząc estetykę z użytecznością. Zawsze dążę do tego, by moje projekty były intuicyjne i dostosowane do potrzeb użytkowników. Pracuję z najnowszymi narzędziami i technologiami, stale rozwijając swoje umiejętności. Prywatnie jestem miłośnikiem technologii, designu oraz minimalistycznych rozwiązań, które inspirują mnie do tworzenia wyjątkowych projektów.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Umiętności</p>
+              <p class="tab-links" onclick="opentab('experience')" >Doświadczenie</p>
+              <p class="tab-links" onclick="opentab('education')">Edukacja</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UX/UI Designer</span><br>Projektowanie Interfejsów</li>
+                <li><span>Web Development</span><br>Rozwijanie aplikacji Webowych</li>
+                <li><span>App Development</span><br>Budowanie aplikacji na Android/</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Obecnie</span><br>Designer w  Dziwisz Design </li>
+                <li><span>2021-2023</span><br>Członek zespołu apple</li>
+                <li><span>2019-2021</span><br>Praca w Google</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br>Kurs Human-Centered Design na platformie IDEO U</li>
+                <li><span>2015</span><br>Staż jako Junior Graphic Designer w Zara</br></li>
+                <li><span>2014</span><br>Informatyka na Uniwersytecie Radomskim</li>
+              </ul>
+            </div>
+        </div>        
+      </div> 
+    </div>
+    <!-- ----Servieces---- -->
+    <div id="servieces">
+      <div class="container">
+        <h1 class="sub-title">Usługi</h1>
+        <div class="servieces-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Jestem biegły w projektowaniu responsywnych i nowoczesnych stron internetowych, które wyróżniają się estetyką oraz zgodnością z najnowszymi standardami. Potrafię projektować strony w zgodzie z zasadami RWD (Responsive Web Design) oraz optymalizować layouty pod kątem różnych urządzeń.</p>
+            <a href="#">Zobacz więcej</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Jako projektant UX/UI, skupiam się na tworzeniu intuicyjnych i estetycznych interfejsów, które maksymalizują satysfakcję użytkownika. Moje projekty łączą funkcjonalność z estetyką, zapewniając spójność i łatwość użytkowania. </p>
+            <a href="#">Zobacz więcej</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Mam doświadczenie w projektowaniu aplikacji mobilnych i desktopowych, które łączą funkcjonalność z nowoczesnym designem. Specjalizuję się w tworzeniu interfejsów, które są intuicyjne, przyjazne użytkownikowi i zoptymalizowane pod kątem różnych platform (iOS, Android, czy Windows).</p>
+            <a href="#">Zobacz więcej</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>Freelance</h2>
+            <p>Tworzę nowoczesne, responsywne interfejsy użytkownika z wykorzystaniem HTML, CSS, JavaScript. Specjalizuję się w projektach dostosowanych do potrzeb klienta, dbając o estetykę, wydajność i interaktywność aplikacji webowych.</p>
+            <a href="#">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Moje prace</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Cryptify11.png" >
+          <div class="layer">
+            <h3>Cryptify</h3>
+            <p>Cryptify – Łatwy i szybki dostęp do kryptowalut. 🌐💎</p>
+            <a href="Crypto-Website-Template-main\index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="CineStreamok.png" >
+          <div class="layer">
+            <h3>CineStream</h3>
+            <p>CineStream - Włącz emocje, wyłącz nudę! 🎬"</p>
+            <a href="Movies Website\index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--
+        <div class="work">
+          <img src="app_idea3.jpeg" >
+          <div class="layer">
+            <h3>CaroGo</h3>
+            <p>Zarezerwuj, jedź i ciesz się mobilnością na własnych warunkach – zawsze pod ręką." 🚗✨</p>
+            <a href="Rento Car Website\index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    -->
+      
+    </div>
+    <a href="#" class="btn">Zobacz Więcej</a>
+</div>
+<!-- -----------contact------- -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Kontakt</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+        <p><i class="fa-solid fa-phone"></i>48 605 366 644</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Piotr Dziwisz.pdf" download class="btn btn2">Pobierz CV</a>
+      </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Wyślij</button>
+          </form>
+          <span id="msg">
+           
+          </span>
+        </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright C Piotr Dziwisz. Made with <i class="fa-solid fa-heart"></i></p>
+  </div>
+ </div>
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+        }
+
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+      </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOYV_4tCTH0Np06B0d4hRFSuxH602UMWMikJa5PR4VL43o2aKZvAJKIE2AN77rDB0p/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset();
+        
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
